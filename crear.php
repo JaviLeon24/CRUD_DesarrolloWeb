@@ -25,15 +25,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h2>Agregar Nuevo Producto</h2>
-    <form action="" method="post">
-        <label>Nombre:</label>
-        <input type="text" name="nombre" required>
-        <label>Precio:</label>
-        <input type="number" name="precio" step="0.01" required>
-        <label>Descripción:</label>
-        <textarea name="descripcion" required></textarea>
-        <input type="submit" value="Guardar">
-    </form>
+    <div class="container">
+        <h2>Agregar Nuevo Producto</h2>
+        <form action="" method="post">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+            
+            <label>Precio:</label>
+            <input type="number" name="precio" step="0.01" required>
+            
+            <label>Descripción:</label>
+            <textarea name="descripcion" required></textarea>
+            
+            <input type="submit" value="Guardar">
+        </form>
+    </div>
 </body>
 </html>
